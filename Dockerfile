@@ -7,4 +7,4 @@ WORKDIR /var/www/html
 RUN unzip simply-amazed.zip
 RUN cp -rvf simply-amazed/* .
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 22
