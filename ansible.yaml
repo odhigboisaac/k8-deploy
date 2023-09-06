@@ -2,9 +2,9 @@
   become: true
   tasks: 
      - name: delete old deployment
-      command: kubectl delete deployment k8proj-deployment
+       command: kubectl delete deployment k8proj-deployment
      - name: delete old service
-      command: kubectl delete service k8proj-service
+       command: kubectl delete service k8proj-service
      - name: create new deployment
        command: kubectl apply -f /home/azureuser/deployment.yaml
      - name: create new service
